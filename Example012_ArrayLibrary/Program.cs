@@ -23,7 +23,30 @@ void PrintArray(int[] col)
     }
 }
 
+int IndexOf(int[] collection, int find)
+{
+    int count = collection.Length;
+    int index = 0;
+    int position = -1; //Чтобы увидеть, что элемента со значением find нет в массиве
+    while (index < count)
+    {
+        if (collection[index] == find)
+        {
+            position = index;
+            break;
+        }
+        index++;
+    }
+    return position;
+}
+
 int[] array = new int[10]; // по умолчанию заполнится нулями
 
 FillArray(array);
+//array[4] = 4; Для теста
+//array[6] = 4; Для теста
 PrintArray(array);
+Console.WriteLine();
+
+int pos = IndexOf(array, 4);
+Console.WriteLine(pos);
