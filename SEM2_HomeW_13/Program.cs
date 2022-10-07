@@ -24,5 +24,3 @@ else
     Console.Write("третья цифра : ");
     Console.WriteLine(copyn / n % 10);
 }
-          
-
