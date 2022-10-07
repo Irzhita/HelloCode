@@ -33,7 +33,7 @@ int[] array = new int[n];
 FillArray(array);
 PrintArray(array);
 
-int max = 0;
+int max = array[0]+array[1]+array[n-1];
 
 for (int i = 2; i <= n-1; i++)
 {
